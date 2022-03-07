@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clone NetFlix</title>
+        <link rel="stylesheet" href="assets/css/estilo.css">
+    <!--own slider-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    </head>
+    <body>
+        <header>
+            <section class="container"> 
+                <h2 class="logo">NETFLIX</h2>
+                <nav>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Inicio</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Series</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Filmes</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Documentários</a>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <div class="filme-principal">
+                <div class="container">
+                    <h3 class="titulo">SHANG-CHI</h3>
+                    <p class="descricao">Shang-Chi precisa confrontar o passado que pensou ter deixado para trás. Ao mesmo tempo, ele é envolvido em uma teia de mistérios da organização conhecida como Dez Anéis.</p>
+                    <div class="botoes">
+                        <button class="botao" role="button">
+                            ASSISTIR AGORA
+                            <i class="fas fa-play" style="margin-left: 5px;"></i>
+                        </button>
+                        <button  role="button" class="botao">
+                            MAIS INFORMAÇÕES
+                            <i class="fas fa-plus" style="margin-left: 5px;"></i>
+                        </button>
+                    </div>
+                </div>
+               
+                
+            </div>
+        </main>
+        <div class="box-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="/assets/imagens/agentecarter.jpg" alt="" ></div>
+            <div class="item"><img src="/assets/imagens/avantevingadores.jpg" alt="" ></div>
+            <div class="item"><img src="/assets/imagens/guardioes.jpg" alt="" ></div>
+            <div class="item"><img src="/assets/imagens/mantoeadaga.jpg" alt="" ></div>
+            <div class="item"><img src="/assets/imagens/shield.jpg" alt="" ></div>
+            <div class="item"><img src="/assets/imagens/rising.jpg" alt="" ></div>
+            <div class="item"><img src="/assets/imagens/shield.jpg" alt="" ></div>
+        </div>
+    </div>
+        <script src="https://kit.fontawesome.com/76a3966ddc.js" crossorigin="anonymous"></script>
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/owl.carousel.min.js"></script>
+        <script>
+           $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+        </script>
+    </body>
+</html>
